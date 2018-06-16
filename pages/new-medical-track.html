@@ -144,58 +144,45 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <a href="../pages/new-medical-track.html" class="btn btn-success pull-right new-register">Registrar informações médicas</a>
-                        <h1 class="page-header">Informações Médicas</h1>
+                        <a href="../pages/medical-track.html" class="btn btn-danger pull-right new-register">Voltar</a>
+                        <h1 class="page-header">Registrar informações médicas</h1>
                     </div>
                     <div class="col-lg-12 page-body">
-                        <table class="table table-hover table-striped table-bordered table-responsive">
-                            <thead>
-                                <tr>
-                                    <th>Data</th>
-                                    <th>Hora</th>
-                                    <th>Sistólica</th>
-                                    <th>Diastólica</th>
-                                    <th>Situação</th>
-                                    <th>Ações</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>12/06/2018</td>
-                                    <td>07:00</td>
-                                    <td>140</td>
-                                    <td>90</td>
-                                    <td class="text-primary">Normal</td>
-                                    <td>
-                                        <button type="button" class="btn btn-primary fa fa-edit"></button>
-                                        <button type="button" class="btn btn-danger fa fa-trash"></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>12/06/2018</td>
-                                    <td>07:00</td>
-                                    <td>150</td>
-                                    <td>100</td>
-                                    <td class="text-danger">Elevada</td>
-                                    <td>
-                                        <button type="button" class="btn btn-primary fa fa-edit"></button>
-                                        <button type="button" class="btn btn-danger fa fa-trash"></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>15/06/2018</td>
-                                    <td>09:00</td>
-                                    <td>100</td>
-                                    <td>80</td>
-                                    <td class="text-warning">Baixa</td>
-                                    <td>
-                                        <button type="button" class="btn btn-primary fa fa-edit"></button>
-                                        <button type="button" class="btn btn-danger fa fa-trash"></button>
-                                    </td>
-                        
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <form method="post">
+                                <div class="form-group ">
+                                    <label class="control-label " for="name">
+                                        Data
+                                    </label>
+                                    <input class="form-control" id="name" name="name" type="text" />
+                                </div>
+                                <div class="form-group ">
+                                    <label class="control-label requiredField" for="email">
+                                        Hora
+                                    </label>
+                                    <input class="form-control" id="email" name="email" type="text" />
+                                </div>
+                                <div class="form-group ">
+                                    <label class="control-label " for="subject">
+                                         Pressão Sistólica
+                                    </label>
+                                    <input class="form-control" id="subject" name="subject" type="text" />
+                                </div>
+                                <div class="form-group ">
+                                    <label class="control-label " for="subject">
+                                         Pressão Diastólica
+                                    </label>
+                                    <input class="form-control" id="subject" name="subject" type="text" />
+                                </div>
+                                <div class="form-group">
+                                    <div>
+                                        <a href="../pages/medical-track.html" class="btn btn-primary" name="submit" type="submit">
+                                            Salvar
+                                        </a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
