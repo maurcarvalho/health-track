@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Health track app ">
+    <meta name="author" content="Mauricio Carvalho">
+
+    <title>Health Track</title>
+
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/health-track.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Health Track</a>
+            </div>
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-tasks fa-fw"></i>
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-tasks">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Atividade Física</strong>
+                                        <span class="pull-right text-muted">40% Realizado</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                            style="width: 40%">
+                                            <span class="sr-only">40% Realizado (sucesso)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Alimentação</strong>
+                                        <span class="pull-right text-muted">20% Realizado</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                            <span class="sr-only">20% Realizado</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell fa-fw"></i>
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-comment fa-fw"></i> Registre seu peso
+                                    <span class="pull-right text-muted small">4 minutos atrás</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i>
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-user fa-fw"></i> Menu do usuário</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-gear fa-fw"></i> Configurações</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="../pages/login.html">
+                                <i class="fa fa-sign-out fa-fw"></i> Sair</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Buscar...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <i class="fa fa-home fa-fw"></i> Dashboard</a>
+                            <a href="activity-track.html">
+                                <i class="fas fa-bicycle fa-fw"></i> Atividades Físicas</a>
+                            <a href="food-track.html">
+                                <i class="fas fa-utensils fa-fw"></i> Alimentação</a>
+                            <a href="weigth-track.html">
+                                <i class="fa fa-weight fa-fw"></i> Peso</a>
+                            <a href="medical-track.html">
+                                <i class="fa fa-heartbeat fa-fw"></i> Informações médicas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">Informações Médicas</h1>
+                    </div>
+                    <div class="col-lg-12 page-body">
+                        <table class="table table-hover table-striped table-bordered table-responsive">
+                            <thead>
+                                <tr>
+                                    <th>Data</th>
+                                    <th>Hora</th>
+                                    <th>Sistólica</th>
+                                    <th>Diastólica</th>
+                                    <th>Situação</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>12/06/2018</td>
+                                    <td>07:00</td>
+                                    <td>140</td>
+                                    <td>90</td>
+                                    <td class="text-primary">Normal</td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary fa fa-edit"></button>
+                                        <button type="button" class="btn btn-danger fa fa-trash"></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>12/06/2018</td>
+                                    <td>07:00</td>
+                                    <td>150</td>
+                                    <td>100</td>
+                                    <td class="text-danger">Elevada</td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary fa fa-edit"></button>
+                                        <button type="button" class="btn btn-danger fa fa-trash"></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>15/06/2018</td>
+                                    <td>09:00</td>
+                                    <td>100</td>
+                                    <td>80</td>
+                                    <td class="text-warning">Baixa</td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary fa fa-edit"></button>
+                                        <button type="button" class="btn btn-danger fa fa-trash"></button>
+                                    </td>
+                        
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+</body>
+
+</html>
