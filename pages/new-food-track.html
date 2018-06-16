@@ -144,90 +144,51 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <a href="../pages/new-food-track.html" class="btn btn-success pull-right new-register">Registrar Refeição</a>
-                        <h1 class="page-header">Alimentação</h1>
+                        <a href="../pages/food-track.html" class="btn btn-danger pull-right new-register">Voltar</a>
+                        <h1 class="page-header">Registrar Refeição</h1>
                     </div>
                     <div class="col-lg-12 page-body">
-                        <table class="table table-hover table-striped table-bordered table-responsive">
-                            <thead>
-                                <tr>
-                                    <th>Data</th>
-                                    <th>Hora</th>
-                                    <th>Tipo</th>
-                                    <th>Descrição</th>
-                                    <th>Calorias</th>
-                                    <th>Ações</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>12/06/2018</td>
-                                    <td>07:00</td>
-                                    <td>Café da manhã</td>
-                                    <td>Iogurte sem açucar com mel</td>
-                                    <td>350 Cal</td>
-                                    <td>
-                                        <button type="button" class="btn btn-primary fa fa-edit"></button>
-                                        <button type="button" class="btn btn-danger fa fa-trash"></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>13/06/2018</td>
-                                    <td>12:00</td>
-                                    <td>Almoço</td>
-                                    <td>Salada, peito de frango e arroz integral</td>
-                                    <td>412 Cal</td>
-                                    <td>
-                                        <button type="button" class="btn btn-primary fa fa-edit"></button>
-                                        <button type="button" class="btn btn-danger fa fa-trash"></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>14/06/2018</td>
-                                    <td>12:00</td>
-                                    <td>Almoço</td>
-                                    <td>Salada, peito de frango e arroz integral</td>
-                                    <td>475 Cal</td>
-                                    <td>
-                                        <button type="button" class="btn btn-primary fa fa-edit"></button>
-                                        <button type="button" class="btn btn-danger fa fa-trash"></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>15/06/2018</td>
-                                    <td>12:00</td>
-                                    <td>Almoço</td>
-                                    <td>Frango e arroz integral</td>
-                                    <td>425 Cal</td>
-                                    <td>
-                                        <button type="button" class="btn btn-primary fa fa-edit"></button>
-                                        <button type="button" class="btn btn-danger fa fa-trash"></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>16/06/2018</td>
-                                    <td>09:00</td>
-                                    <td>Jantar</td>
-                                    <td>Salada, Peixe e arroz integral</td>
-                                    <td>475 Cal</td>
-                                    <td>
-                                        <button type="button" class="btn btn-primary fa fa-edit"></button>
-                                        <button type="button" class="btn btn-danger fa fa-trash"></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>17/06/2018</td>
-                                    <td>09:00</td>
-                                    <td>Jantar</td>
-                                    <td>Salada, Carne e arroz integral</td>
-                                    <td>450 Cal</td>
-                                    <td>
-                                        <button type="button" class="btn btn-primary fa fa-edit"></button>
-                                        <button type="button" class="btn btn-danger fa fa-trash"></button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <form method="post">
+                                <div class="form-group ">
+                                    <label class="control-label " for="name">
+                                        Data
+                                    </label>
+                                    <input class="form-control" id="name" name="name" type="text" />
+                                </div>
+                                <div class="form-group ">
+                                    <label class="control-label requiredField" for="email">
+                                        Hora
+                                    </label>
+                                    <input class="form-control" id="email" name="email" type="text" />
+                                </div>
+                                <div class="form-group ">
+                                    <label class="control-label " for="subject">
+                                        Tipo
+                                    </label>
+                                    <input class="form-control" id="subject" name="subject" type="text" />
+                                </div>
+                                <div class="form-group ">
+                                    <label class="control-label " for="subject">
+                                        Descrição
+                                    </label>
+                                    <input class="form-control" id="subject" name="subject" type="text" />
+                                </div>
+                                <div class="form-group ">
+                                    <label class="control-label " for="subject">
+                                        Calorias
+                                    </label>
+                                    <input class="form-control" id="subject" name="subject" type="text" />
+                                </div>
+                                <div class="form-group">
+                                    <div>
+                                        <a href="../pages/food-track.html" class="btn btn-primary" name="submit" type="submit">
+                                            Salvar
+                                        </a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
