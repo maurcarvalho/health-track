@@ -14,6 +14,13 @@
     <link href="../assets/css/health-track.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
+
+    <!-- JQuery UI-->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="../assets/js/health-track.js"></script>
+
 </head>
 
 <body>
@@ -151,16 +158,16 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <form method="post">
                                 <div class="form-group ">
-                                    <label class="control-label " for="name">
+                                    <label class="control-label " for="date">
                                         Data
                                     </label>
-                                    <input class="form-control" id="name" name="name" type="text" />
+                                    <input class="form-control datepicker" id="date" name="date" type="text" />
                                 </div>
                                 <div class="form-group ">
-                                    <label class="control-label requiredField" for="email">
+                                    <label class="control-label requiredField" for="hora">
                                         Hora
                                     </label>
-                                    <input class="form-control" id="email" name="email" type="text" />
+                                    <input class="form-control timepicker" id="hora" name="hora" type="text" />
                                 </div>
                                 <div class="form-group ">
                                     <label class="control-label " for="subject">
@@ -194,7 +201,6 @@
             </div>
         </div>
     </div>
-    <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="../vendor/metisMenu/metisMenu.min.js"></script>
 </body>

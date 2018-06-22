@@ -1,5 +1,7 @@
 $(function() {
     $('#side-menu').metisMenu();
+    $(".datepicker").datepicker();
+    $(".timepicker").timepicker({ 'scrollDefault': 'now' });
 });
 
 $(function() {
@@ -33,20 +35,4 @@ $(function() {
             break;
         }
     }
-
-    $('#login-form').validate({
-        rules: {
-            email: {
-                required: true
-            },
-            password: {
-                required: true
-            }
-        },
-        submitHandler: function (form) {
-            alert('valid form');
-            return false;
-            //../pages/index.html
-        }
-    });
 });
