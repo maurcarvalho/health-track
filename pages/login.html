@@ -19,6 +19,11 @@
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
+
+    <!-- JS -->    
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/jquery.validate/jquery.validate.min.js"></script>
+    <script src="../assets/js/login.js"></script>
 </head>
 
 <body>
@@ -57,12 +62,12 @@
 
             <div class="row omb_row-sm-offset-3">
                 <div class="col-xs-12 col-sm-6">
-                    <form class="omb_loginForm" action="" autocomplete="off" method="POST">
+                    <form class="login-form" id="login-form" action="" autocomplete="off" method="POST">
                         <div class="input-group">
                             <span class="input-group-addon">
                                 <i class="fa fa-user"></i>
                             </span>
-                            <input type="text" class="form-control" name="username" placeholder="email address">
+                            <input type="email" class="form-control" name="email" placeholder="email address">
                         </div>
                         <span class="help-block"></span>
 
@@ -74,7 +79,7 @@
                         </div>
                         <span class="help-block"></span>
 
-                        <a class="btn btn-lg btn-primary btn-block" href="../pages/index.html">Login</a>
+                        <button class="btn btn-lg btn-primary btn-block" id="btn-login" type="submit">Login</button>
                     </form>
                 </div>
             </div>
